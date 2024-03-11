@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { blogTemp } from "@components/konten/temp";
+
 const Konten = () => {
   return (
     <section className="py-[4rem]">
@@ -10,30 +12,30 @@ const Konten = () => {
       </div>
 
       <div className="grid grid-cols-3 px-20">
-        <article className="">
-          <div className="relative w-full h-[300px]">
-            <Image
-              src="/images/konten/gbr1.jpg"
-              alt="Konten pertama"
-              className="object-cover w-full h-full"
-              fill
-            />
-          </div>
-          <div className="py-8">
-            <Link href="" className="text-2xl font-bold">
-              Konten Pertama
-            </Link>
-            <p className="text-md text-neutral-500 mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              repellendus provident molestias fugiat reiciendis eius doloremque
-              fugit laudantium perferendis natus.
-            </p>
+        {blogTemp.map((item, index) => (
+          <article key={`${item.id}${index}`}>
+            <div className="relative w-full h-[300px]">
+              <Image
+                src={item.images}
+                alt={item.blogName}
+                className="object-cover w-full h-full"
+                fill
+              />
+            </div>
+            <div className="py-8">
+              <Link href="" className="text-2xl font-bold">
+                {item.blogName}
+              </Link>
+              <p className="text-md text-neutral-500 mt-2">
+                {item.description}
+              </p>
 
-            <span className="mt-6 inline-block font-semibold text-xs rounded-md text-[#F77E21]">
-              02 Maret 2024
-            </span>
-          </div>
-        </article>
+              <span className="mt-6 inline-block font-semibold text-xs rounded-md text-[#F77E21]">
+                {item.date}
+              </span>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );
