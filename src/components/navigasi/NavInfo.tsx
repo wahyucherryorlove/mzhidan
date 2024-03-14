@@ -10,15 +10,17 @@ export function NavInfo() {
       <div className=""></div>
       <div className="flex items-center gap-x-7">
         <Link
-          href=""
+          href="mailto:wahyucherryorlove@gmail.com"
           className="text-xs flex gap-x-2 text-neutral-500 items-center"
         >
           <GmailIcons className="w-4 h-4 fill-neutral-500" />
           wahyucherryorlove@gmail.com
         </Link>
         <Link
-          href=""
+          href="https://wa.me/6282194823066"
           className="text-xs flex gap-x-2 text-neutral-500 items-center"
+          rel="noreferrer"
+          target="_blank"
         >
           <PhoneIcons className="w-4 h-4 fill-neutral-500" />
           +62 821 9482 3066
