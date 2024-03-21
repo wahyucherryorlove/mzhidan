@@ -25,6 +25,7 @@ export default function Page({ params }: { params: { view: any } }) {
                     <Foods
                       index={index}
                       id={item.id}
+                      key={`${index}${item.id}`}
                       foodName={item.foodName}
                       description={item.description}
                       images={item.images}
@@ -41,6 +42,7 @@ export default function Page({ params }: { params: { view: any } }) {
                     <Drinks
                       index={index}
                       id={item.id}
+                      key={`${index}${item.id}`}
                       foodName={item.foodName}
                       description={item.description}
                       images={item.images}
