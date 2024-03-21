@@ -1,14 +1,14 @@
 "use client";
 
-import { Inter } from "next/font/google";
+import { Karla } from "next/font/google";
 import "./globals.css";
 
 import { useWindowSize } from "@hooks/useWindowSize";
 
-import { NavbarDesktop } from "@components/navigasi/NavbarDesktop";
+import { Navbar } from "@components/navigasi/Navbar";
 import { Footer } from "@components/navigasi/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const karla = Karla({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -19,15 +19,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {width === 0 ? (
-          ""
-        ) : width < 1024 ? (
-          <NavbarDesktop />
-        ) : (
-          <NavbarDesktop />
-        )}
-
+      <body className={karla.className}>
+        <Navbar />
         {children}
         <Footer />
       </body>

@@ -11,7 +11,7 @@ const Konten = () => {
         <span className="h-0.5 w-[80px] bg-[#F2BE22] block" />
       </div>
 
-      <div className="grid grid-cols-3 px-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 px-20 gap-4 lg:gap-6">
         {blogTemp.map((item, index) => (
           <article key={`${item.id}${index}`}>
             <div className="relative w-full h-[300px]">

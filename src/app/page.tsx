@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Jumbotron } from "@components/home/component/Jumbotron";
 import { Menu } from "@components/home/component/Menu";
+import { About } from "@components/home/component/About";
 import { Konten } from "@components/home/component/Konten";
 
 export const metadata: Metadata = {
@@ -12,9 +13,10 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <main className="mt-[120px]">
+      <main className="mt-[90px] lg:mt-[120px]">
         <Jumbotron />
         <Menu />
+        <About />
         <Konten />
       </main>
     </>
