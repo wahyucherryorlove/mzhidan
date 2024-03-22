@@ -5,7 +5,7 @@ import WarungImages from "@images/home/warung.jpeg";
 
 export function About() {
   return (
-    <section className="pt-[7rem] pb-[4rem] px-20 flex md:grid grid-cols-2 flex-col-reverse gap-y-10">
+    <section className="py-[4rem] lg:pt-[7rem] pb-[4rem] px-4 sm:px-8 lg:px-20 flex md:grid grid-cols-2 flex-col-reverse gap-y-10">
       <div className="lg:mt-8">
         <h2 className="text-2xl font-semibold mb-3 lg:mb-5">
           Sejarah Warung Bunda Zhidan

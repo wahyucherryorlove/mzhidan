@@ -10,7 +10,7 @@ const Menu = () => {
         <span className="h-0.5 w-[100px] bg-[#F2BE22] block" />
       </div>
 
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-20">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 sm:px-8 lg:px-20">
         {menuTemp.map((item, index) => (
           <figure className="w-full" key={`${item.id}${index}`}>
             <div className="relative w-full h-[300px] rounded-md group">
