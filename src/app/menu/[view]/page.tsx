@@ -11,10 +11,10 @@ import { menuTemp } from "@components/menu/temp";
 export default function Page({ params }: { params: { view: any } }) {
   return (
     <>
-      <main className="mt-[120px]">
+      <main className="mt-[90px] lg:mt-[120px]">
         <Jumbotron />
 
-        <section className="py-[6rem] px-4 lg:px-40">
+        <section className="py-[4rem] lg:py-[6rem] px-4 lg:px-40">
           <Menus />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-4">
