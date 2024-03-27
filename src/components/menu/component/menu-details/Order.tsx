@@ -3,13 +3,13 @@
 import Image from "next/image";
 import type { Dispatch, SetStateAction } from "react";
 
-import { FoodProps } from "@components/menu/interface";
+import { MenuProps } from "@components/menu/interface";
 
 import MinusIcons from "@icons/minus.svg";
 import PlusIcons from "@icons/plus.svg";
 import ShoppingIcons from "@icons/shopping-basket.svg";
 
-interface OrderProps extends FoodProps {
+interface OrderProps extends MenuProps {
   isOrder: number;
   setIsOrder: Dispatch<SetStateAction<number>>;
 }

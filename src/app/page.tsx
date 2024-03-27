@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <main className="mt-[90px] lg:mt-[120px]">
+      <main className="mt-[90px]">
         <Jumbotron />
         <Menu />
         <About />

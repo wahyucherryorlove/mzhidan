@@ -5,7 +5,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export function Menus() {
+export function MenuTabs() {
   const [isOpen, setIsOpen] = useState(false);
   const router = usePathname();
 

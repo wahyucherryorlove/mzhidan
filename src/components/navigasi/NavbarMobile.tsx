@@ -91,9 +91,10 @@ export function NavbarMobile() {
         </aside>
       </header>
       {isOpen && (
-        <button onClick={buttonOpen} className="cursor-default">
-          <div className="absolute inset-0 bg-neutral-950/70 z-20" />
-        </button>
+        <div
+          className="absolute inset-0 bg-neutral-950/70 z-20"
+          onClick={buttonOpen}
+        />
       )}
     </>
   );

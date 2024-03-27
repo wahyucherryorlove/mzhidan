@@ -1,28 +1,26 @@
 "use client";
 
 import { Jumbotron } from "@components/menu/component/Jumbotron";
-import { Menus } from "@components/menu/hooks/menu";
-
-import { Drinks } from "@components/menu/component/Drink";
-import { Foods } from "@components/menu/component/Food";
+import { MenuTabs } from "@components/menu/hooks/menu";
+import { Menus } from "@components/menu/component/Menu";
 
 import { menuTemp } from "@components/menu/temp";
 
 export default function Page({ params }: { params: { view: any } }) {
   return (
     <>
-      <main className="mt-[90px] lg:mt-[120px]">
+      <main className="mt-[90px]">
         <Jumbotron />
 
         <section className="py-[4rem] lg:py-[6rem] px-4 lg:px-40">
-          <Menus />
+          <MenuTabs />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-4">
             {params.view === "makanan" &&
               menuTemp.map(
                 (item, index) =>
                   item.categori === "food" && (
-                    <Foods
+                    <Menus
                       index={index}
                       id={item.id}
                       key={`${index}${item.id}`}
@@ -39,7 +37,7 @@ export default function Page({ params }: { params: { view: any } }) {
               menuTemp.map(
                 (item, index) =>
                   item.categori === "drink" && (
-                    <Drinks
+                    <Menus
                       index={index}
                       id={item.id}
                       key={`${index}${item.id}`}

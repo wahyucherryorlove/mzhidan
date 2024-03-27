@@ -11,7 +11,7 @@ export function Footer() {
       <div className="flex justify-center gap-x-5 items-center mt-4">
         <Link
           href="https://www.instagram.com/wahyudix15/"
-          className="w-10 h-10 bg-[#FF407D] hover:bg-[#DA0C81] duration-200 flex items-center justify-center rounded-full"
+          className="w-10 h-10 bg-[#5755FE] hover:bg-[#387ADF] duration-200 flex items-center justify-center rounded-full"
           target="_blank"
           rel="noreferrer"
         >
@@ -19,7 +19,7 @@ export function Footer() {
         </Link>
         <Link
           href="https://web.facebook.com/wahyu.jhyyy/"
-          className="w-10 h-10 bg-[#FF407D] hover:bg-[#DA0C81] duration-200 flex items-center justify-center rounded-full"
+          className="w-10 h-10 bg-[#5755FE] hover:bg-[#387ADF] duration-200 flex items-center justify-center rounded-full"
           target="_blank"
           rel="noreferrer"
         >
@@ -27,7 +27,7 @@ export function Footer() {
         </Link>
         <Link
           href="https://twitter.com/css_wahyu"
-          className="w-10 h-10 bg-[#FF407D] hover:bg-[#DA0C81] duration-200 flex items-center justify-center rounded-full"
+          className="w-10 h-10 bg-[#5755FE] hover:bg-[#387ADF] duration-200 flex items-center justify-center rounded-full"
           target="_blank"
           rel="noreferrer"
         >
@@ -35,7 +35,7 @@ export function Footer() {
         </Link>
         <Link
           href="https://www.linkedin.com/in/wahyudi-umar-ba2333236/"
-          className="w-10 h-10 bg-[#FF407D] hover:bg-[#DA0C81] duration-200 flex items-center justify-center rounded-full"
+          className="w-10 h-10 bg-[#5755FE] hover:bg-[#387ADF] duration-200 flex items-center justify-center rounded-full"
           target="_blank"
           rel="noreferrer"
         >

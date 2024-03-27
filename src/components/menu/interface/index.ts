@@ -1,4 +1,4 @@
-interface FoodProps {
+interface MenuProps {
   id: number;
   foodName: string;
   description: string;
@@ -7,13 +7,4 @@ interface FoodProps {
   date: string;
 }
 
-interface DrinkProps {
-  id: number;
-  foodName: string;
-  description: string;
-  price: number;
-  images: string;
-  date: string;
-}
-
-export type { DrinkProps, FoodProps };
+export type { MenuProps };

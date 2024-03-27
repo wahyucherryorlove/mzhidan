@@ -3,13 +3,13 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import type { FoodProps } from "../interface";
+import type { MenuProps } from "../interface";
 
-interface FoodsProps extends FoodProps {
+interface MenusProps extends MenuProps {
   index: number;
 }
 
-export function Foods({
+export function Menus({
   index,
   id,
   foodName,
@@ -17,7 +17,7 @@ export function Foods({
   description,
   price,
   date,
-}: FoodsProps) {
+}: MenusProps) {
   const router = useRouter();
 
   return (

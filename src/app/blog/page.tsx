@@ -8,7 +8,7 @@ import ArrowLeftIcons from "@icons/arrow-left.svg";
 export default function Page() {
   return (
     <>
-      <main className="mt-[90px] lg:mt-[120px]">
+      <main className="mt-[90px]">
         <Jumbotron />
 
         <section className="py-[6rem] md:py-[9rem] px-6 lg:px-40 flex flex-col gap-y-4">
